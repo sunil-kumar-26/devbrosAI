@@ -1,0 +1,134 @@
+
+.meet-ai-model{
+    background: url('/space.jpg');
+    width: 100dvw;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    display: flex;
+    font-size:150px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;    
+}
+.meet-ai-model::selection{
+    
+    text-shadow: 3px 3px 19px greenyellow;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+   gap: 10px;
+   /* border: 1px solid white; */
+}
+.p1{
+font-size:180px;
+text-align: end;
+/* text-shadow: 10px 20px 30px black; */
+ background: linear-gradient(to right, #646061, #f1e9e8, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
+.p2{
+font-size:45px;
+text-align: start;
+align-self: flex-start;
+width:auto;
+/* text-shadow: 10px 20px 30px black; */
+cursor: pointer;
+user-select: none;
+ /* border: 1px solid white; */
+ background: linear-gradient(to right, #646061, #f1e9e8, #646061, #f1e9e8);
+ -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+.p2:active{
+/* text-decoration: underline; */
+ text-underline-offset: 10px;
+ font-size:46px;
+}
+.p2:hover{
+
+/* text-decoration: underline; */
+ text-underline-offset: 10px;
+}
+
+
+img{
+width: 100dvw;
+height: 100%;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+@media (min-width:320px) and (max-width:380px){
+  
+.meet-ai-model{
+    background: url('/AI wallpaper.webp');
+    width: 100dvw;
+    height:200px;
+   background-repeat: no-repeat;
+    background-size: cover  ;
+    display: flex;
+    justify-content: center; 
+   align-items: center;
+    font-size: 32px;
+    
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    user-select: none;
+   
+}
+
+.p1{
+font-size:30px;
+text-align: end;
+text-shadow: 0px 0px 15px whitesmoke;
+
+}
+
+.p2{
+font-size:14px;
+text-align: start;
+width:fit-content;
+position: relative;
+left: 65px;
+text-shadow: 10px 20px 30px black;
+cursor: pointer;
+user-select:none;
+}
+.p2:active{
+text-decoration: underline;
+ text-underline-offset: 10px;
+ font-size:14px;
+ 
+}
+
+
+
+img{
+width: 100dvw;
+height: 100%;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+
+}

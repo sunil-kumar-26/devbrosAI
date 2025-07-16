@@ -1,0 +1,50 @@
+utils/ folder ek chhota sa magician hota hai frontend projects mein.
+ Ye wo jagah hai jahan tu reusable helper functions ya logic rakhta hai jo kisi specific component ya page se directly related nahi hoti,
+  lekin project mein kaafi jagah kaam aati hai.
+
+Samajh le: utils/ folder ka kaam kya hai?
+Imagine kar — tu ek function banata hai jo:
+
+Date ko format karta hai
+
+Text ko capitalize karta hai
+
+Random string generate karta hai
+
+Form data validate karta hai
+
+Ye sab functions tu multiple components mein bar-bar use karega.
+ Toh inko baar-baar har jagah likhne se accha hai, 
+ ek jagah utils/ folder mein daal de — aur har component bas import karke use kar le.
+
+
+...................................................................................................................................................................................................................................................................
+
+utils/ folder ek chhota sa magician hota hai frontend projects mein.
+ Ye wo jagah hai jahan tu reusable helper functions ya logic rakhta hai jo kisi specific component ya page se directly related nahi hoti, 
+ lekin project mein kaafi jagah kaam aati hai.
+
+Samajh le: utils/ folder ka kaam kya hai?
+Imagine kar — tu ek function banata hai jo:
+
+Date ko format karta hai
+
+Text ko capitalize karta hai
+
+Random string generate karta hai
+
+Form data validate karta hai
+
+Ye sab functions tu multiple components mein bar-bar use karega. 
+Toh inko baar-baar har jagah likhne se accha hai, ek jagah utils/ folder mein daal de — aur har component bas import karke use kar le.
+
+
+
+
+formatDate.js ka chhota example:
+
+// src/utils/formatDate.js
+export function formatDate(dateStr) {
+  const date = new Date(dateStr);
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+}

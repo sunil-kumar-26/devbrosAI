@@ -1,0 +1,270 @@
+.information-container{
+    background:url('C:\Users\sc\Documents\react_js\devbrosAI\src\assets\black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100dvw;
+    min-height:500px ;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content:center;
+align-items: start;
+margin-top:-4px
+}
+
+
+
+
+.para1{
+    /* color: whitesmoke; */
+    background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+   transition: opacity 0.3s linear;
+    font-size: 70px;
+    align-self: center;
+   
+}
+.para2{
+           background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+    /* color: whitesmoke; */
+        font-size: 55px;
+        align-self: center;
+         opacity: 1;
+   transition: opacity 0.3s linear;
+}
+.para3{
+    /* color: whitesmoke; */
+         background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+        font-size: 45px;
+        align-self: center;
+         opacity: 1;
+   transition: opacity 0.3s linear;
+}
+
+.try{
+
+    margin: 10px;
+     align-self: center;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(202, 196, 196);
+    border-radius: 5px;
+    font-weight: 600;
+   background: linear-gradient(to left,#940f7e,#c91919);
+    border: 0px solid #808080;
+    transition: font-size 0.2s linear,border-color 0.2s linear ;
+}
+
+
+.try:hover{
+   font-size: 16px;
+    
+    border: 1px solid black;
+    color: black;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+
+}
+
+
+.try:active{
+   font-size: 15px;
+       width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    color: gray;
+
+}
+
+.para1:hover{
+  opacity: 0.5;
+}
+.para2:hover{
+  opacity: 0.5;
+}
+.para3:hover{
+  opacity: 0.5;
+}
+
+
+.company-symbol{
+width: 80px;
+height:80px;
+position: relative;
+top: 90px;
+}
+
+
+
+
+.brain-container{
+  background: url('/brain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100dvw; 
+  height:100dvh;
+}
+
+.inside-brain-container{
+  color: gainsboro;
+  font-size: 50px;
+  /* border: 1px solid white; */
+  display: inline-block;
+  padding: 20px;
+  width: 500px;
+  flex-wrap: wrap;
+  position: relative;
+  top: 250px;
+  left: 100px;
+      background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
+.small-container{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: 400px;
+}
+
+.ask{
+padding-left: 5px;
+    background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+.heading5{
+  /* border: 1px solid green; */
+  width: 500px;
+}
+.font{
+  color: #646061;  
+  margin-left: 15px;
+}
+@media (min-width:320px) and (max-width:380px){
+  .brain-container{
+  background: url('/brain.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100dvw; 
+  height: 250px;
+/* border: 1px solid red; */
+}
+.inside-brain-container{
+  color: gainsboro;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 30px;
+  width:auto;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(to right, #646061, #f1e9e8);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
+.ask{
+padding-left: 5px;
+    background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+.heading5{
+  width: auto;
+}
+.small-container{
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  width: auto;
+}
+.company-symbol{
+width: 80px;
+height:80px;
+position: relative;
+top: 0px;
+}
+
+
+}
+
+@media (min-width:320px) and (max-width:380px){
+  .information-container{
+    background:url('C:\Users\sc\Documents\react_js\devbrosAI\src\assets\black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100dvw;
+    min-height:500px ;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content:center;
+align-items: start;
+margin-top:-4px
+}
+
+
+.para1{
+    /* color: whitesmoke; */
+    background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+   transition: opacity 0.3s linear;
+    font-size: 18px;
+    align-self: center;
+   
+}
+
+.para2{
+background: linear-gradient(to right, #646061, #f1e9e8);
+-webkit-background-clip: text;  
+-webkit-text-fill-color: transparent;
+ /* color: whitesmoke; */
+font-size: 14px;
+align-self: center;
+opacity: 1;
+}
+.para3{
+    /* color: whitesmoke; */
+         background: linear-gradient(to right, #646061, #f1e9e8);
+    -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+        font-size: 13px;
+        align-self: center;
+         opacity: 1;
+   transition: opacity 0.3s linear;
+}
+.try{
+
+    margin: 10px;
+     align-self: center;
+    width: 50px;
+    height: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    color: rgb(202, 196, 196);
+    border-radius: 5px;
+    font-weight: 600;
+   background: linear-gradient(to left,#940f7e,#c91919);
+    border: 0px solid #808080;
+    transition: font-size 0.2s linear,border-color 0.2s linear ;
+}
+
+}
