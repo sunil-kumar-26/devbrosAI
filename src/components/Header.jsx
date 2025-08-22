@@ -8,14 +8,14 @@ const Header=()=>{
         
         <div>
             <header className='header-container'>
-             <h3 className='logo'><FaCode className='facode'/><p className='devbros'>DEVbros AI</p></h3>
+             <h3 className='logo'><FaCode className='facode' /><p className='devbros' id='small-logo'>DEVbros AI</p></h3>
              <div className='neviagtion'>
                 <ul className='list'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Features</li>
                 </ul>
-                  <FaRegCircleUser className='users'   />
+                  <FaRegCircleUser className='users ' id='desktop-user' ></FaRegCircleUser>
              </div>
  
                  

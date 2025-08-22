@@ -6,7 +6,7 @@
 
 .header-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   background-color: black;
@@ -15,7 +15,7 @@
   z-index: 2;
   height: 60px;
   box-shadow: 1px 8px 15px rgba(0,0,0,0.5);
-  
+ /* border-color: 2px solid green; */
 }
 
 /* .facode{
@@ -26,15 +26,15 @@ height: 20px;
 .logo{
     background-color: black;
     color: whitesmoke;
-     width: 160px;  
+     width: 190px;  
     height: 50px;
     display: flex;
     font-size: 22px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:10px;
     flex-wrap: wrap;
        user-select: none;
-       /* border: 1px solid white; */
    
 }
 
@@ -77,53 +77,49 @@ li:hover{
 
 
 @media (min-width:320px) and (max-width:380px){
-  
-  .header-container{
-  display: flex;
+.header-container{
+display: flex;
 justify-content: space-evenly;
 align-items: center;  
-  box-shadow: 1px 4px 15px rgba(0,0,0,0.5);
+box-shadow: 1px 4px 15px rgba(0,0,0,0.5);
 }
-  
 
 .logo{
     background-color: black;
     color: whitesmoke;
-     width: 95px;  
+     width: 100px;  
     height: 28px;
     display:flex;
-    font-size: 14px;
+    font-size: 6px;
     flex-wrap: wrap;
     align-items: center;
-
-    justify-content: center;
-text-shadow:  2px 2px 8px white;
-/* border: 1px solid green; */
-user-select: none;
+    text-shadow:  2px 2px 8px white;
+    user-select: none;
 }
 
+#small-logo{
+  font-size: 12px;
+}
 
 .neviagtion{
-  
 width: auto;
 height: auto;
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
-  background-color: black;
-  /* border: 1px solid red; */
+background-color: black;
 }
+
 .list{
-    list-style: none;
-    display: flex;
-      color: whitesmoke;
+ list-style: none;
+ display: flex;
+ color: whitesmoke;
  width: 210px;
-height: auto;
+ height: auto;
  justify-content:space-around;
  align-items: center;
  flex-wrap: wrap; 
- /* border: 1px solid green; */
 }
 
 li{
@@ -142,25 +138,23 @@ li:active{
  user-select: none;
 }
 
-.users{
-  color: whitesmoke;
-/* border: 1px solid green; */
+#desktop-user{
+ width: 20px;
+ height: 20px;
+} 
+
+.users {
+  /* color: whitesmoke; */
 width: 100px;
 height: 30px;
 margin: auto 0px;
 cursor: pointer;
+
 }
 
 .facode{
   font-size: 14px;
   margin: 0px 2px;
-   /* border: 1px solid green; */
-}
-
-.devbros{
-  font-size: 12px;
-   /* border: 1px solid green; */
-   align-self: center;
 }
 
 }
@@ -168,7 +162,16 @@ cursor: pointer;
 .users{
   color: whitesmoke;
 width: 50px;
-height: 18px;
+height: 28px;
 margin: auto 0px;
 cursor: pointer;
 }
+.devbros{
+  font-size: 20px;
+   align-self: center;
+}
+
+/* #desktop-user{
+ width: 25px;
+ height: 25px;
+} */
