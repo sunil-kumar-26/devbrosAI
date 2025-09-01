@@ -71,12 +71,12 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className="sidebar">
           <button className="close-btn" onClick={onClose}>×</button>
           <ul>
-            <li>⚙️ Settings</li>
-            <li>🌙 Dark Mode</li>
-            <li>🔗 Share Site</li>
-            <li>👤 Users Info</li>
-            <li>ℹ️ About Us</li>
-            <li>➡️ Login</li>
+            <li className="sidebar-li">⚙️ Settings</li>
+            <li className="sidebar-li" >🌙 Dark Mode</li>
+            <li className="sidebar-li">🔗 Share Site</li>
+            <li className="sidebar-li">👤 Users Info</li>
+            <li  className="sidebar-li">ℹ️ About Us</li>
+            <li className="sidebar-li">➡️ Login</li>
           </ul>
         </div>
       </div>

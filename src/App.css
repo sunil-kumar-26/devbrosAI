@@ -1,5 +1,12 @@
+/* *{
+     font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+} */
 .App{
     display:flex;
     flex-direction: column;
   
+}
+html{
+  scroll-behavior: smooth;
 }

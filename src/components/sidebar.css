@@ -1,12 +1,11 @@
-/* sidebar.css */
 .sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* blur/overlay */
-  backdrop-filter: blur(3px);     /* actual blur effect */
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  backdrop-filter: blur(3px);     /* blur effect */
   z-index: 999;
   display: none;
   transition: opacity 0.3s ease;
@@ -20,7 +19,7 @@
 .sidebar-container {
   position: fixed;
   top: 0;
-  left: -250px; /* hidden initially */
+  left: -300px; /* hidden initially */
   width: 250px;
   height: 100%;
   background: #f5f5f5;
@@ -47,17 +46,81 @@
   padding: 15px 10px;
   cursor: pointer;
   border-bottom: 1px solid #ddd;
-  font-size: 16px;
-}
-
+  width: 100%;  /* ✅ fill sidebar */
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left; /* or center if you want */
+  box-sizing: border-box; /* prevent overflow */
+   text-decoration: none;
+   border-radius: 12px;
+  color: rgb(78, 78, 78);
+    font-family: "Montserrat", sans-serif;
+}   
+/* hover effect */
 .sidebar ul li:hover {
   background: #e0e0e0;
+  color: black;
 }
 
 .close-btn {
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
   float: right;
+  width: 30px; border-radius: 50%;
+  color: gray;
+  
+}
+
+.close-btn:hover{
+background-color: rgba(0, 0, 0, 0.1);
+color: black;
+
+}
+
+/* 📱 Responsive for Mobile */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 70%; /* sidebar will cover 70% screen in mobile */
+    left: -70%;
+    user-select: none;
+  }
+
+  .sidebar-container.open {
+    left: 0;
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+    text-align: center; /* center text in mobile */
+    padding: 12px;
+  }
+
+  .close-btn {
+    font-size: 35px;
+    user-select: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    width: 60%; /* more width for small phones */
+    left: -80%;
+  }
+
+  .sidebar-container.open {
+    left: 0;
+  }
+
+
+  .sidebar ul li {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+.sidebar-li{
+    display: flex;
+    text-decoration: none;
+}
 }

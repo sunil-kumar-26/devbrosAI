@@ -5,12 +5,13 @@ import { FaCode } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from './Sidebar';
+import { Link } from 'react-router';
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div>
+    <div id='my-header'> 
       <header className='header-container'>
         <h3 className='logo'>
           <FaCode className='facode' />
@@ -18,8 +19,10 @@ const Header = () => {
         </h3>
         <div className='neviagtion'>
           <ul className='list'>
-            <li>Home</li>
-            <li>About</li>
+            {/* <Link to={'/'}> <li>Home</li> </Link> */}
+            <a href="#my-header"><li>Home</li></a>
+           <a href="#information-container"> <li>About</li></a>
+            {/* <Link to={'/about'}>About</Link> */}
             <li>Features</li>
           </ul>
           <FaRegCircleUser 

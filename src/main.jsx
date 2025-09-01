@@ -5,10 +5,20 @@ import App from './App.jsx';
 import Info from './pages/Info.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import Hero from './pages/Hero.jsx';
-
+import AIChat from './pages/AIChat.jsx'
+const myrouter=createBrowserRouter([
+{path:'/',
+element:<App/>
+},
+{
+path:'/user/chatbot',
+element:<AIChat/>
+}
+])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-      <App />
-  </StrictMode>,
+    <RouterProvider router={myrouter}>
+  <App />
+    </RouterProvider>
+    
 )
