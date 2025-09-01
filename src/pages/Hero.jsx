@@ -1,7 +1,10 @@
 import React from 'react';
 import './hero.css'
+import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 const Hero = () => {
-  return (
+  return (<>
+ 
     <div className='hero-container'>
     <div className='meet-ai-model'>
       <div className='info'>
@@ -10,7 +13,7 @@ const Hero = () => {
     </div>
     </div>
     <img className='company-logo' src="/logo.png" alt="company" />
-    </div>
+    </div></>
   )
 }
 

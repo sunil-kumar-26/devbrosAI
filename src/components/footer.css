@@ -10,7 +10,7 @@
 }
 .contact-list{
     font-size: 17px;
-    padding: 5px;
+    /* padding: 5px; */
     color: rgb(58, 54, 54);
     width: auto;
     height: auto;
@@ -149,7 +149,7 @@ margin: 10px auto;
     font-size: 20px;
     
 }
-.product-services{
+.ervices{
     text-align: start;
 }
 

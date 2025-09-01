@@ -6,7 +6,7 @@ function Info(){
     return(
         <>
       
-        <div  className='information-container'>
+        <div  className='information-container ' id='information-container'>
           <p className='para1'>DEVbros AI is a lightweight AI model</p>
           <p className='para2'>delivering fast, accurate results in text generation</p>
           <p className='para3'>And helps you to get out of the problems</p>

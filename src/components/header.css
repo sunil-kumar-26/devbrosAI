@@ -139,8 +139,8 @@ li:active{
 }
 
 #desktop-user{
- width: 20px;
- height: 20px;
+ width: 15px;
+ height: 15px;
 } 
 
 .users {
@@ -171,7 +171,29 @@ cursor: pointer;
    align-self: center;
 }
 
-/* #desktop-user{
- width: 25px;
- height: 25px;
-} */
+
+.mydesktop{
+  display: none;
+}
+
+.myphone{
+  display: block;
+}
+
+/* Default: Mobile (show hamburger, hide user icon) */
+.mydesktop {
+  display: none;
+}
+.myphone {
+  display: block;
+}
+
+/* Desktop screen ke liye */
+@media (min-width: 380px) {
+  .mydesktop {
+    display: block; /* user icon visible */
+  }
+  .myphone {
+    display: none;  /* hamburger hidden */
+  }
+}
