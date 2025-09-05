@@ -1,5 +1,5 @@
 .information-container{
-    background:url('black.png');
+    background:url('./src/assets/black.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100dvw;

@@ -1,59 +1,11 @@
-    // import React, { useState } from "react";
-    // import "./sidebar.css";
-    // import { FaCog, FaShareAlt, FaUser, FaUsers, FaSignInAlt } from "react-icons/fa";
-
-    // const Sidebar = () => {
-    //   const [darkMode, setDarkMode] = useState(false);
-
-    //   return (
-    //     <div className="sidebar">
-    //       <h3 className="sidebar-title">Sidebar</h3>
-
-    //       <ul className="sidebar-list">
-    //         <li className="sidebar-item">
-    //           <span>Settings</span>
-    //           <FaCog className="sidebar-icon" />
-    //         </li>
-
-    //         <li className="sidebar-item toggle-item">
-    //           <span>Dark Mode</span>
-    //           <label className="switch">
-    //             <input
-    //               type="checkbox"
-    //               checked={darkMode}
-    //               onChange={() => setDarkMode(!darkMode)}
-    //             />
-    //             <span className="slider round"></span>
-    //           </label>
-    //         </li>
-
-    //         <li className="sidebar-item">
-    //           <span>Share Site</span>
-    //           <FaShareAlt className="sidebar-icon" />
-    //         </li>
-
-    //         <li className="sidebar-item">
-    //           <span>Users Info</span>
-    //           <FaUser className="sidebar-icon" />
-    //         </li>
-
-    //         <li className="sidebar-item">
-    //           <span>About Us</span>
-    //           <FaUsers className="sidebar-icon" />
-    //         </li>
-
-    //         <li className="sidebar-item">
-    //           <span>Login</span>
-    //           <FaSignInAlt className="sidebar-icon" />
-    //         </li>
-    //       </ul>
-    //     </div>
-    //   );
-    // };
-
-    // export default Sidebar;
-
-// sidebar.jsx
+import { IoSettingsSharp } from "react-icons/io5";
+import { MdLightMode } from "react-icons/md";
+import { CiShare2 } from "react-icons/ci";
+import { FaShareNodes } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa";
+import { MdLogin } from "react-icons/md";   
+import { BsExclamationCircleFill } from "react-icons/bs";
+import { IoLogInSharp } from "react-icons/io5";
 import React from "react";
 import "./sidebar.css";
 
@@ -71,12 +23,12 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className="sidebar">
           <button className="close-btn" onClick={onClose}>×</button>
           <ul>
-            <li className="sidebar-li">⚙️ Settings</li>
-            <li className="sidebar-li" >🌙 Dark Mode</li>
-            <li className="sidebar-li">🔗 Share Site</li>
-            <li className="sidebar-li">👤 Users Info</li>
-            <li  className="sidebar-li">ℹ️ About Us</li>
-            <li className="sidebar-li">➡️ Login</li>
+            <li className="sidebar-li"> <p className="sidebar-items">Settings</p><IoSettingsSharp className="sidebar-icons"/></li>
+            <li className="sidebar-li" > <p className="sidebar-items">Dark Mode</p><MdLightMode className="sidebar-icons" size={'27px'} /></li>
+            <li className="sidebar-li"><p className="sidebar-items">Share Site</p><FaShareNodes className="sidebar-icons" /></li>
+            <li className="sidebar-li"><p className="sidebar-items"> Users Info</p><FaUser className="sidebar-icons" /></li>
+            <li  className="sidebar-li"> <p className="sidebar-items">About Us</p><BsExclamationCircleFill className="sidebar-icons"  /></li>
+            <li className="sidebar-li"><p className="sidebar-items">Login</p><IoLogInSharp className="sidebar-icons" size={'27px'}/></li>
           </ul>
         </div>
       </div>

@@ -1,3 +1,4 @@
+
 .sidebar-overlay {
   position: fixed;
   top: 0;
@@ -101,6 +102,10 @@ color: black;
     font-size: 35px;
     user-select: none;
   }
+
+/*.....................*/
+
+
 }
 
 @media (max-width: 480px) {
@@ -119,8 +124,36 @@ color: black;
     padding: 20px;
   }
 
-.sidebar-li{
-    display: flex;
-    text-decoration: none;
+  .sidebar-items{
+  font-size: 12px;
+  width: 100px;
+  border: 1px solid  saddlebrown ;
+ 
 }
+.sidebar-icons{
+  font-size: 12px;
+  width: 50px;
+  /* border: 1px solid green; */
+}
+ 
+
+}
+
+.sidebar-li{
+  display: flex;
+ text-decoration: none;
+ justify-content: start;
+ align-items: center;
+}
+
+.sidebar-items{
+  font-size: 20px;
+  width: 100px;
+  /* border: 1px solid  saddlebrown ; */
+  font-weight: 500;
+}
+.sidebar-icons{
+  font-size: 22px;
+  width: 50px;
+  /* border: 1px solid green; */
 }
